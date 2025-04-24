@@ -1,20 +1,9 @@
 [
     {
-        "name": "Project 1",
-        "description": "This is the first project.",
-        "url": "https://example.com/project1",
-        "thumbnail": "project-thumbnails/project1.png"
-    },
-    {
-        "name": "Project 2",
-        "description": "This is the second project.",
-        "url": "https://example.com/project2",
-        "thumbnail": "project-thumbnails/project2.png"
-    },
-    {
-        "name": "Project 3",
-        "description": "This is the third project.",
-        "url": "https://example.com/project3",
-        "thumbnail": "project-thumbnails/project3.png"
+        "name": "Portfolio",
+        "description": "A personal portfolio website showcasing my projects and skills. Built with HTML, CSS, and JavaScript",
+        "link": "https://adrianshirazi.com",
+        "github": "https://github.com/adrian-shirazi/portfolio",
+        "thumbnail": "project-thumbnails/portfolio.png"
     }
 ]
