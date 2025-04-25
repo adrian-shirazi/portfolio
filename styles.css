@@ -161,3 +161,20 @@ footer {
     font-size: 0.95rem;
     color: #444;
 }
+
+#contact-container {
+    display: grid;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.contact-logo:hover {
+    transform: scale(1.1)
+}
+
+.contact-logo {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.1s ease-in-out
+}
