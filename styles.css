@@ -253,5 +253,37 @@ footer {
     padding: 13px 5px;
     border-radius: 0.375rem;
     cursor: pointer;
-  }
-  
+}
+
+.cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* spacing between text and arrow */
+    text-decoration: none;
+    /* removes underline */
+    color: #6D3B07;
+    /* makes it same color as surrounding text */
+    font: inherit;
+    /* optional, but keeps font consistent */
+    border: 3px solid currentColor;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.1s ease;
+
+}
+
+.cta-link:hover {
+    text-decoration: underline;
+    /* optional hover style */
+    border-color: white
+}
+
+.arrow-icon {
+    height: 0.75em;
+    /* matches text height */
+    width: 0.6em;
+    /* maintain aspect ratio */
+}
