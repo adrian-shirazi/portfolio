@@ -310,3 +310,14 @@ footer {
     width: 0.6em;
     /* maintain aspect ratio */
 }
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
