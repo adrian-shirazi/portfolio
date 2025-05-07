@@ -19,6 +19,10 @@ body {
     background-color: #fff;
 }
 
+p {
+    font-size: 1.1rem;
+}
+
 /* Navbar styles */
 .navbar {
     position: fixed;
