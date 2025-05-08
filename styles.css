@@ -169,7 +169,7 @@ footer {
     display: grid;
     grid-template-columns: repeat(auth-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding: 2rem;
+    padding: 2%;
 }
 
 /* Card base */
@@ -188,7 +188,6 @@ footer {
 /* Thumbnail */
 .card-image {
     width: 100%;
-    height: 200px;
     object-fit: cover;
 }
 
@@ -250,7 +249,7 @@ footer {
 .form-group-container {
     display: grid;
     gap: 1rem;
-    margin-top: 2rem;
+    margin-top: 2%;
 }
 
 .form-group {
@@ -259,12 +258,12 @@ footer {
 }
 
 .form-label {
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.5%;
 }
 
 .form-input,
 .form-textarea {
-    padding: 0.5rem;
+    padding: 0.5%;
     border: 1px solid #e5e7eb;
     display: flex;
     height: 2.5rem;
@@ -291,7 +290,7 @@ footer {
 
 .form-submit {
     width: 100%;
-    margin-top: 1.2rem;
+    margin-top: 1.2%;
     background-color: #0866bf;
     color: #fff;
     padding: 13px 5px;
