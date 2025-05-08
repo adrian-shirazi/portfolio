@@ -10,7 +10,7 @@
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
-
+    scroll-padding-top: 80px;
 }
 
 /* Base styles */
@@ -22,7 +22,11 @@ body {
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
+}
+
+h2 {
+    font-size: 2rem;
 }
 
 /* Navbar styles */
@@ -124,15 +128,18 @@ section {
 
 .section1 {
     background-color: #1f38be;
+    color: white;
 }
 
 .section2 {
     background-color: #0866bf;
-    margin-top: -10rem;
+    color: white;
+    margin-top: -5rem;
 }
 
 .section3 {
     background-color: #28046c;
+    color: white;
 }
 
 /* Footer styles */
@@ -373,4 +380,9 @@ header {
 .waves4 {
     background-image: url('./spacers/layer4.svg');
     margin-top: -10rem;
+}
+
+input,
+textarea {
+    font-family: sans-serif;
 }
