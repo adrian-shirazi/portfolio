@@ -120,20 +120,19 @@ header {
 
 /* Basic section styles */
 section {
-    padding: 4rem 10rem 2rem;
-    /* max-width: 1200px; */
-    margin: 0 auto;
+    padding: 4% 10% 2%;
 }
 
 .section1 {
     background-color: #1f38be;
     color: white;
+
 }
 
 .section2 {
     background-color: #0866bf;
     color: white;
-    margin-top: -5rem;
+    margin-top: -1px;
 }
 
 .section3 {
@@ -374,12 +373,10 @@ header {
 
 .waves3 {
     background-image: url('./spacers/layer3.svg');
-    margin-top: -10rem;
 }
 
 .waves4 {
     background-image: url('./spacers/layer4.svg');
-    margin-top: -10rem;
 }
 
 input,
