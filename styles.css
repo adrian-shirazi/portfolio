@@ -202,6 +202,7 @@ footer {
 .card-title {
     margin: 0 0 0.5rem;
     font-size: 1.25rem;
+    color: #444;
 }
 
 .card-description {
