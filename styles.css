@@ -75,6 +75,7 @@ h2 {
     align-items: center;
     gap: 2rem;
     padding: 2rem;
+    min-height: 60vh
 }
 
 .profile-pic {
@@ -131,7 +132,6 @@ section {
 .section1 {
     background-color: #1f38be;
     color: white;
-
 }
 
 .section2 {
