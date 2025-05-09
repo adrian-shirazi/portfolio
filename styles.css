@@ -326,7 +326,7 @@ footer {
 .cta-link:hover {
     text-decoration: underline;
     /* optional hover style */
-    border-color: #86a373
+    border-color: transparent;
 }
 
 .arrow-icon {
@@ -379,7 +379,6 @@ textarea {
 }
 
 .landing {
-    /* width: 100%; */
     position: absolute;
-    transform: translateY(-20%)
+    transform: translate(-7%, -8%);
 }
