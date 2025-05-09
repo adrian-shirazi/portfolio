@@ -353,7 +353,7 @@ footer {
     /* height: 120%; */
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 101%;
     margin-top: -1px;
 }
 
