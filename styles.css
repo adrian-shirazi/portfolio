@@ -116,6 +116,11 @@ header {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-color: #4e7869;
+    overflow: hidden;
+    /* Image colors */
+    /* 4e7869 dark green */
+    /* 86a373 mint green */
 }
 
 /* Basic section styles */
@@ -342,16 +347,6 @@ footer {
     }
 }
 
-header {
-    background-image: url("blob-haikei-1.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    /* Image colors */
-    /* 4e7869 dark green */
-    /* 86a373 mint green */
-}
-
 .spacer {
     aspect-ratio: 900/300;
     width: 100%;
@@ -381,4 +376,10 @@ header {
 input,
 textarea {
     font-family: sans-serif;
+}
+
+.landing {
+    /* width: 100%; */
+    position: absolute;
+    transform: translateY(-20%)
 }
