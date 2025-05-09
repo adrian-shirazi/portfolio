@@ -1,18 +1,4 @@
-/* Custom Font */
-@font-face {
-    font-family: 'MyHandwriting';
-    src: url("my-handwriting.otf") format("opentype");
-}
-
-/* Define some colors */
-:root {
-    --dark-green: #4e7869;
-    --light-green: #86a373;
-    --deep-blue: #1f38be;
-    --blue: #0866bf;
-    --purple: #28046c;
-    --brown: #6D3B07;
-}
+/* || General Styles */
 
 /* Apply the following to every element on the page */
 * {
@@ -41,7 +27,41 @@ h2 {
     font-size: 2rem;
 }
 
-/* Navbar styles */
+section {
+    padding: 4% 10% 2%;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+}
+
+input,
+textarea {
+    font-family: sans-serif;
+}
+
+/* || Utilities */
+
+/* Custom Font */
+@font-face {
+    font-family: 'MyHandwriting';
+    src: url("my-handwriting.otf") format("opentype");
+}
+
+/* Define some colors */
+:root {
+    --dark-green: #4e7869;
+    --light-green: #86a373;
+    --deep-blue: #1f38be;
+    --blue: #0866bf;
+    --purple: #28046c;
+    --brown: #6D3B07;
+}
+
+
+/* || Navbar */
+
 .navbar {
     position: fixed;
     top: 0;
@@ -82,8 +102,9 @@ h2 {
     transition: opacity 0.3s ease;
 }
 
-/* Used for the introductory content */
-header {
+/* || Introductory section */
+
+.intro-section {
     /* Leave some space for the navbar */
     padding-top: 80px;
     min-height: 100vh;
@@ -94,12 +115,65 @@ header {
     background-color: var(--dark-green);
 }
 
+.blob-visual {
+    position: absolute;
+    transform: translate(-7%, -8%);
+}
+
+.fade-in-heading {
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    font-size: 2rem;
+}
+
+.cta-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* spacing between text and arrow */
+    text-decoration: none;
+    /* removes underline */
+    color: var(--brown);
+    /* makes it same color as surrounding text */
+    font: inherit;
+    border: 3px solid currentColor;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 6px;
+    transition: all 0.1s ease;
+
+}
+
+.cta-link:hover {
+    text-decoration: underline;
+    border-color: transparent;
+}
+
+.arrow-icon {
+    height: 0.75em;
+    width: 0.6em;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+/* || About section */
+
+.about-section {
+    background-color: var(--deep-blue);
+    color: white;
+}
+
 .about-container {
     display: flex;
     align-items: center;
     gap: 2rem;
     padding: 2rem;
-    /* Don't want the projects section to rear it's head when looking at the about section */
+    /* Don't want the projects section to peek in when looking at the about section */
     min-height: 60vh
 }
 
@@ -131,48 +205,13 @@ header {
     }
 }
 
-section {
-    padding: 4% 10% 2%;
-}
-
-.about-section {
-    background-color: var(--deep-blue);
-    color: white;
-}
+/* || Projects section */
 
 .projects-section {
     background-color: var(--blue);
     color: white;
     margin-top: -1px;
 }
-
-.contact-section {
-    background-color: var(--purple);
-    color: white;
-}
-
-footer {
-    text-align: center;
-    padding: 1rem;
-}
-
-#socials {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    padding: 1rem;
-}
-
-.social-icon img {
-    height: 2rem;
-    width: 2rem;
-    transition: transform 0.2s ease;
-}
-
-.social-icon:hover img {
-    transform: scale(1.2);
-}
-
 
 /* Grid layout for projects */
 #projects-container {
@@ -217,8 +256,14 @@ footer {
     color: #444;
 }
 
-/* Form styling based on https://web3forms.com/templates/basic-html-contact-form */
+/* || Contact section */
 
+.contact-section {
+    background-color: var(--purple);
+    color: white;
+}
+
+/* Form styling based on https://web3forms.com/templates/basic-html-contact-form */
 .contact-form {
     margin-left: auto;
     margin-right: auto;
@@ -256,11 +301,6 @@ footer {
     min-height: 120px;
 }
 
-input,
-textarea {
-    font-family: sans-serif;
-}
-
 .form-input::placeholder,
 .form-textarea:focus-visible {
     color: #6b7280;
@@ -271,8 +311,6 @@ textarea {
     outline: 2px solid white;
     outline-offset: 2px;
 }
-
-
 
 .form-submit {
     width: 100%;
@@ -285,46 +323,26 @@ textarea {
     margin-top: 1rem;
 }
 
-.cta-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    /* spacing between text and arrow */
-    text-decoration: none;
-    /* removes underline */
-    color: var(--brown);
-    /* makes it same color as surrounding text */
-    font: inherit;
-    border: 3px solid currentColor;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    border-radius: 6px;
-    transition: all 0.1s ease;
+/* || Footer */
 
+#socials {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
 }
 
-.cta-link:hover {
-    text-decoration: underline;
-    border-color: transparent;
+.social-icon img {
+    height: 2rem;
+    width: 2rem;
+    transition: transform 0.2s ease;
 }
 
-.arrow-icon {
-    height: 0.75em;
-    width: 0.6em;
+.social-icon:hover img {
+    transform: scale(1.2);
 }
 
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
+/* || Spacers */
 .spacer {
     aspect-ratio: 900/200;
     width: 100%;
@@ -349,9 +367,4 @@ textarea {
 
 .layer4 {
     background-image: url('./spacers/layer4.svg');
-}
-
-.blob-visual {
-    position: absolute;
-    transform: translate(-7%, -8%);
 }
